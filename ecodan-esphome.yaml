@@ -55,7 +55,7 @@ external_components:
 
 packages:
   remote_package:
-    url: https://github.com/gekkekoe/esphome-ecodan-hp/
+    url: https://github.com/denogio/esphome-ecodan-hp/
     ref: main
     refresh: always
     files: [ 
