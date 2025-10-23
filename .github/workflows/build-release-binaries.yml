@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
-        lang: [ "en", "nl", "es", "fr", "it", "de", "fi", "sv", "no", "pl", "da"]
-        board: [esp32s3, esp32s3-proxy2]
-        zone: [z1, z2]
+        lang: [ "en", "da"]
+        board: [esp32-wemos-d1]
+        zone: [z1]
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Create dummy wifi credentials
